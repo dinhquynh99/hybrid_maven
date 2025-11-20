@@ -37,5 +37,6 @@ public class Employee_01_CreateEmployee {
     @AfterClass
     public void afterClass(){
         driver.quit();
+
     }
 }
