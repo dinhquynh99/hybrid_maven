@@ -1,4 +1,4 @@
-package Keywords;
+package keywords;
 
 public class Topic_01_Keywords {
     // Không đặt tên biến/ hàm/ class trùng vs từ khoá

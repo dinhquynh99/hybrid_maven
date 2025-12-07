@@ -1,4 +1,4 @@
-package Keywords;
+package keywords;
 
 public class Networking {
 

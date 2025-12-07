@@ -1,4 +1,4 @@
-package Keywords;
+package keywords;
 
 public class Dell extends Networking implements IComputor {
     // Class kế thừa class => dùng extends

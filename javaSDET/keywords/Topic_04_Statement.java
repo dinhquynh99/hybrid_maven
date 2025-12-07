@@ -1,4 +1,4 @@
-package Keywords;
+package keywords;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package Keywords;
+package keywords;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
