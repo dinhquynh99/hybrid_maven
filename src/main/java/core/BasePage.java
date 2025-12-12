@@ -11,6 +11,11 @@ import java.time.Duration;
 import java.util.List;
 
 public class BasePage {
+
+    public static BasePage getBasePage(){
+        return new BasePage();
+    }
+
     // Global variable
     // private WebDriver driver;
 
@@ -306,7 +311,7 @@ public class BasePage {
                 .until(ExpectedConditions.invisibilityOfElementLocated(getByXPath(locator)));
     }
 
-    public boolean waitListElementInVisible(WebDriver driver, String locator) {
+    public boolean waitListElementInvisible(WebDriver driver, String locator) {
         return new WebDriverWait(driver, longTimeout)
                 .until(ExpectedConditions.invisibilityOfAllElements(getListElement(driver, locator)));
     }
@@ -329,6 +334,10 @@ public class BasePage {
     public WebElement waitElementClickable(WebDriver driver, String locator) {
         return new WebDriverWait(driver, longTimeout)
                 .until(ExpectedConditions.elementToBeClickable(getByXPath(locator)));
+    }
+
+    public boolean isloadingIconDisappear(WebDriver driver){
+        return waitListElementInvisible(driver, "//div[contains(@class,'oxd-loading-spinner')]");
     }
 
     private Duration shortTimeout = Duration.ofSeconds(10);
